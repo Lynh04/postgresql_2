@@ -31,10 +31,9 @@ app.use("/api/stats", statsRouter);
 app.use("/api", schoolRouter);
 
 // Khởi động Server
-if (process.env.NODE_ENV !== 'production') {
-    app.listen(PORT, () => {
-        console.log(`Server is running on port ${PORT}`);
-    });
-}
+// Khởi động Server
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 
 export default app;
