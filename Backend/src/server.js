@@ -26,9 +26,9 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
-app.use("/users", userRouter);
+app.use("/api/users", userRouter);
+app.use("/api/stats", statsRouter);
 app.use("/api", schoolRouter);
-app.use("/stats", statsRouter);
 
 // Khởi động Server
 if (process.env.NODE_ENV !== 'production') {
